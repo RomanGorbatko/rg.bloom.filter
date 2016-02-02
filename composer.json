@@ -1,0 +1,15 @@
+{
+    "name": "romangorbatko/rg.bloom.filter",
+    "description": "The best way to check object existence and save memory and disk usage.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roman Gorbatko",
+            "email": "romangorbatko@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "ext-mbstring": "*"
+    }
+}
