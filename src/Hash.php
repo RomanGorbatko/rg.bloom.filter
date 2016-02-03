@@ -69,7 +69,7 @@ class Hash
             }
         }
         do {
-            $hash = substr(str_shuffle(BloomFilter::$alphabet), 0, 6);
+            $hash = substr(str_shuffle(BloomFilter::alphabet), 0, 6);
         } while (in_array($hash, $seeds));
         $this->seed[] = $hash;
     }
