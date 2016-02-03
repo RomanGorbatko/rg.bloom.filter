@@ -12,5 +12,8 @@
     "prefer-stable": true,
     "require": {
         "ext-mbstring": "*"
+    },
+    "autoload": {
+        "psr-4": { "RG\\": "/src" }
     }
 }
