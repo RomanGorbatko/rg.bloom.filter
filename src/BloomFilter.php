@@ -188,7 +188,7 @@ class BloomFilter
         return [
             'set' => $this->set,
             'hashes' => $cache,
-//			'entries' => $this->entries_count
+            'entries' => $this->entries_max
         ];
     }
 
