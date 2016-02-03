@@ -178,16 +178,18 @@ class BloomFilter
         return $this;
     }
 
+    /**
+     * @return array
+     */
     public function export()
     {
-        $cache = [];
-        foreach ($this->hashes as $hash) {
-            $cache[] = $hash->seed[0];
-        }
+        $getHash = function(Hash $hash) {
+            return $hash->seed[0];
+        };
 
         return [
             'set' => $this->set,
-            'hashes' => $cache,
+            'hashes' => array_map($getHash, $this->hashes),
             'entries' => $this->entries_max
         ];
     }
